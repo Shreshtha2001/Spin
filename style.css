@@ -1,0 +1,234 @@
+body {
+
+  
+background: linear-gradient(to bottom, #99ccff 0%, #ffffff 80%);
+  position:relative;
+overflow : hidden;
+
+}
+
+text {
+
+        font-family:Helvetica, Arial, sans-serif;
+        font-size:12px;
+	font-weight: bold;
+	top : 50%;
+	pointer-events:none;
+
+}
+
+h1 {
+        
+        margin-left:25%;
+        margin-top:0;
+      }
+#chart {
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    top: 40px; 
+
+    left: 6%;
+   
+
+}
+
+
+
+
+#question {
+
+    position: relative ;
+
+    width: 400px;
+
+    height: 400px;
+
+    top: 0;
+
+    left: 50%;
+
+}
+
+
+
+
+#question h2 {
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    position: absolute;
+
+    padding: 0;
+
+    margin: 0;
+
+    top: -50%;
+    left :10%;
+
+    -webkit-transform: translate(0, -50%);
+
+    transform: translate(0, -50%);
+
+
+
+background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+    
+}
+
+
+
+#answer {
+
+    position: fixed;
+
+    width: 400px;
+
+    height: 500px;
+
+    top: 80%;
+    text-align : center ;
+    left: 500px;
+    font-weight: bold;
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+background-image: linear-gradient(
+    -225deg,
+    #231557 19%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+    
+
+}
+
+
+
+
+.show-answer-button {
+
+    position: absolute;
+
+    right: 0;
+
+    top: 0;
+
+    background-color: #4CAF50;
+
+    /* Green */
+
+    border: none;
+
+    color: white;
+
+    padding: 10px 20px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    font-size: 16px;
+
+    margin: 10px;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+
+}
+
+
+
+
+.answer {
+
+    display: none;
+
+    margin: 10px;
+
+    font-size: 18px;
+    Padding
+}
+
+
+
+
+.show-answer-button:focus+.answer,
+
+.show-answer-button:active+.answer,
+
+.show-answer-button:hover+.answer {
+
+    display: block;
+
+}
+
+h1 {
+position: relative;
+
+    width: 400px;
+
+    height: 500px;
+
+    top: 0px;
+    text-align : left ;
+    left: 20px;
+    font-weight: bold;
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+background-image: linear-gradient(
+    -225deg,
+    #231557 19%,
+    #44107a 29%,
+    #ff1361 20%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-size: 10% auto;
+  color: #0000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+    
+
+}
