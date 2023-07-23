@@ -24,15 +24,15 @@ h1 {
       }
 #chart {
 
-    position: absolute;
+       position: absolute;
 
-    width: 600px;
+    width: 800px;
 
-    height: 500px;
+    height: 800px;
 
     top: 40px; 
 
-    left: 6%;
+    left: 8%;
    
 
 }
