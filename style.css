@@ -24,7 +24,7 @@ h1 {
       }
 #chart {
 
-       position: absolute;
+    position: absolute;
 
     width: 800px;
 
@@ -49,8 +49,9 @@ h1 {
     height: 400px;
 
     top: 0;
-
+    text-align: left;
     left: 50%;
+    margin :1px ;
 
 }
 
@@ -60,12 +61,13 @@ h1 {
 #question h2 {
 
     font-size: 20px;
+    
 
     font-weight: bold;
 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-    position: absolute;
+    position: relative;
 
     padding: 0;
 
@@ -110,17 +112,18 @@ background-image: linear-gradient(
 
     height: 500px;
 
-    top: 80%;
+
+    top: 78%;
     text-align : center ;
-    left: 500px;
+    left: 700px;
     font-weight: bold;
 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 background-image: linear-gradient(
     -225deg,
-    #231557 19%,
+    #FF0000 19%,
     #44107a 29%,
-    #ff1361 67%,
+    #FF0000 67%,
     #fff800 100%
   );
   background-size: auto auto;
@@ -182,6 +185,7 @@ background-image: linear-gradient(
     display: none;
 
     margin: 10px;
+    cpl
 
     font-size: 18px;
     Padding
