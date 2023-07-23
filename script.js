@@ -1,9 +1,9 @@
 
-var padding = { top: 100, right: 40, bottom: 0, left: 150 },
+var padding = { top: 8, right: 40, bottom: 0, left: 90 },
 
-    w = 500 - padding.left - padding.right,
+    w = 560 - padding.left - padding.right,
 
-    h = 500 - padding.top - padding.bottom,
+    h = 560 - padding.top - padding.bottom,
 
     r = Math.min(w, h) / 2,
 
