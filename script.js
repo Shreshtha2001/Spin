@@ -30,7 +30,7 @@ var data = [
 
         "value": 1,
 
-        "question": "which goal-setting methodology is designed to create high quality goals ?",
+        "question": "Which goal-setting methodology is designed to create high quality goals ?",
 
         "answer": "SMART"
 
