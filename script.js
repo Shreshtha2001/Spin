@@ -1,3 +1,14 @@
+let checkHeaderEmpty = false;
+let h1 = document.querySelector('.hQuestion');
+let answerh = document.querySelector('.answerh2')
+
+console.log(checkHeaderEmpty.childNodes)
+
+// if(checkHeaderEmpty)
+// {
+//     h1.style.display('none')
+    
+// }
 
 var padding = { top: 8, right: 40, bottom: 0, left: 90 },
 
@@ -30,7 +41,7 @@ var data = [
 
         "value": 1,
 
-        "question": "Which goal-setting methodology is designed to create high quality goals ?",
+        "question": "which goal-setting methodology is designed to create high quality goals ?",
 
         "answer": "SMART"
 
@@ -228,7 +239,9 @@ arcs.append("text").attr("transform", function (d) {
 container.on("click", spin);
 
 function spin(d) {
-
+   setTimeout(()=>{
+    h1.style.display='flex'
+   },3000)
     container.on("click", null);
 
     //all slices have been seen, all done
@@ -319,15 +332,15 @@ function spin(d) {
 
 //make arrow
 
-svg.append("g")
+// svg.append("g")
 
-    .attr("transform", "translate(" + (w + padding.left + padding.right) + "," + ((h / 2) + padding.top) + ")")
+//     .attr("transform", "translate(" + (w + padding.left + padding.right) + "," + ((h / 2) + padding.top) + ")")
 
-    .append("path")
+//     .append("path")
 
-    .attr("d", "M-" + (r * .15) + ",0L0," + (r * .05) + "L0,-" + (r * .05) + "Z")
+//     .attr("d", "M-" + (r * .15) + ",0L0," + (r * .05) + "L0,-" + (r * .05) + "Z")
 
-    .style({ "fill": "black" });
+//     .style({ "fill": "white" });
 
 //draw spin circle
 
@@ -404,16 +417,20 @@ function getRandomNumbers() {
 }
 
 
+// if(showButton.textContent = "Hide Answer")
+// {
+//     answerDiv.style.visibility = "hidden"
+
+// }
 
 
 function showAnswer() {
 
     answerShow = true
-
+    answerh.style.background = 'white'
     if (answerShow) {
 
         answerDiv.style.visibility = "visible"
-
         showButton.textContent = "Hide Answer"
 
         showButton.style.background = "red"
