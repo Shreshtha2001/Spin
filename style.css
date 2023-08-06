@@ -1,9 +1,10 @@
 body {
 
   
-background: linear-gradient(to bottom, #99ccff 0%, #ffffff 80%);
+background: linear-gradient(to bottom, #99ccff 15%, #ffffff 100%);
   position:relative;
 overflow : hidden;
+
 
 }
 
@@ -46,12 +47,13 @@ h1 {
 
     width: 400px;
 
-    height: 400px;
+    height: 150px;
 
     top: 0;
     text-align: left;
     left: 50%;
     margin :1px ;
+   
 
 }
 
@@ -62,7 +64,9 @@ h1 {
 
     font-size: 20px;
     
+    min-width: 200px;
 
+    min-height: 150px;
     font-weight: bold;
 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -73,16 +77,20 @@ h1 {
 
     margin: 0;
 
-    top: -50%;
-    left :10%;
+    top: -11rem;
+    left: 2rem;
+    margin: auto 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    -webkit-transform: translate(0, -70%);
 
-    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -70%);
+    align-items: center;
+    justify-content: center;
 
-    transform: translate(0, -50%);
 
-
-
-background-image: linear-gradient(
+/* background-image: linear-gradient(
     -225deg,
     #231557 0%,
     #44107a 29%,
@@ -94,12 +102,18 @@ background-image: linear-gradient(
   background-size: 200% auto;
   color: #fff;
   background-clip: text;
-  text-fill-color: transparent;
+ 
+  padding: 1rem;
+  text-fill-color: black;
+  color: black;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  display: inline-block;
-    
+  animation: textclip 2s linear infinite; */
+  display: none;
+  background: white;
+  border-radius: 1rem;
+  padding: 1rem;
+    text-align: center;
 }
 
 
@@ -113,13 +127,14 @@ background-image: linear-gradient(
     height: 500px;
 
 
-    top: 78%;
-    text-align : center ;
-    left: 700px;
+    top: 26rem;
+    margin-top: 2rem;
+    text-align: center;
+    left: 52.5%;
     font-weight: bold;
 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-background-image: linear-gradient(
+/* background-image: linear-gradient(
     -225deg,
     #FF0000 19%,
     #44107a 29%,
@@ -129,17 +144,24 @@ background-image: linear-gradient(
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
+  /* background-clip: text;
+  text-fill-color: transparent; */
+  /* -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
+  animation: textclip 2s linear infinite; */ 
+  color: black;
   display: inline-block;
     
 
 }
 
+#answer h2 
+{
+    /* background: white; */
+    border-radius: 1rem;
+    padding: 1rem;
+    color: black;
+}
 
 
 
@@ -185,10 +207,9 @@ background-image: linear-gradient(
     display: none;
 
     margin: 10px;
-    cpl
 
     font-size: 18px;
-    Padding
+   
 }
 
 
@@ -205,19 +226,14 @@ background-image: linear-gradient(
 }
 
 h1 {
-position: relative;
-
+    position: relative;
     width: 400px;
-
     height: 500px;
-
-    top: 0px;
     text-align : left ;
-    left: 20px;
     font-weight: bold;
 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-background-image: linear-gradient(
+/* background-image: linear-gradient(
     -225deg,
     #231557 19%,
     #44107a 29%,
@@ -231,8 +247,51 @@ background-image: linear-gradient(
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
+  animation: textclip 2s linear infinite; */
   display: inline-block;
     
 
 }
+.hederImg img
+{
+    position: absolute;
+    left: 50%;
+    width: 80%;
+    height: 15%;
+  
+}
+
+.arrow
+{
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    left: 1rem;
+    top: -137%;
+    /* background-color: red; */
+    
+}
+
+.arrow .outer {
+    width: 0;
+    height: 0;
+    border-right: 20px solid #000000;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* rotate: -28deg; */
+   
+  }
+   .arrow .inner {
+    width: 0;
+    height: 0;
+    border-right: 20px solid #ffffff;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 2px;
+    /* rotate: -28deg; */
+  }
