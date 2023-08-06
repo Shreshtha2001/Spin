@@ -41,7 +41,7 @@ var data = [
 
         "value": 1,
 
-        "question": "which goal-setting methodology is designed to create high quality goals ?",
+        "question": "Which goal-setting methodology is designed to create high quality goals?",
 
         "answer": "SMART"
 
@@ -53,9 +53,9 @@ var data = [
 
         "value": 2,
 
-        "question": "Who can help manager with the additional support related to performance process?",
+        "question": "Who can help the manager with the additional support related to performance process?",
 
-        "answer": "HRA"
+        "answer": "HR Advisor"
 
     },
 
@@ -65,7 +65,7 @@ var data = [
 
         "value": 3,
 
-        "question": "What topics can be discussed in SAP talk?",
+        "question": "​​What topics can be discussed in SAP talk?",
 
         "answer": "Performance Discussions and Working Conditions and development"
 
@@ -77,7 +77,7 @@ var data = [
 
         "value": 4,
 
-        "question": "Name the initiative channel where we can talk to external experts about all life challenges anonymously around the clock.",
+        "question": "​Name the channel where we can talk to external experts about all life challenges anonymously around the clock?",
 
         "answer": "Employee Assistance Program"
 
@@ -89,7 +89,7 @@ var data = [
 
         "value": 5,
 
-        "question": "The practice of sharing regular, constructive response at work through a series of ongoing and structured conversations between managers and their employees is called ?",
+        "question": "The practice of sharing regular, constructive responses at work through a series of ongoing and structured conversations between managers and their employees is called? ",
 
         "answer": "Continuous Feedback"
 
@@ -101,7 +101,7 @@ var data = [
 
         "value": 6,
 
-        "question": "What is the channel used to have regular, open dialogue between employee and manager. The dialogue is forward-looking and solution oriented rather than backward-looking.",
+        "question": "What is the channel used to have a regular, open dialogue between employee and manager? The dialogue is forward-looking and solution-oriented rather than backward-looking?",
 
         "answer": "SAP Talk"
 
@@ -113,9 +113,9 @@ var data = [
 
         "value": 7,
 
-        "question": "Name the teams who support managers to bring the performance concerns back on track.",
+        "question": "Name the teams who support managers to bring the performance concerns back on track? ",
 
-        "answer": "People Relations/HR advisor"
+        "answer": "People Relations/HR Advisor"
 
     },
 
@@ -125,9 +125,9 @@ var data = [
 
         "value": 8,
 
-        "question": "Which platform enables to collect feedback from peers, managers and other stakeholders.",
+        "question": "Which platform enables to collect feedback from peers, managers and other stakeholders?",
 
-        "answer": "360 degree feedback"
+        "answer": "360-degree feedback"
 
     },
 
@@ -137,7 +137,7 @@ var data = [
 
         "value": 9,
 
-        "question": "Which process in Success map enables managers to correct the performance deviations?",
+        "question": "​Which process in Manager services enables managers to correct the performance deviations?",
 
         "answer": "Manage to Success"
 
@@ -151,7 +151,7 @@ var data = [
 
         "question": "Who is responsible to initiate the SAP Talk?",
 
-        "answer": "It is the joint It is the joint and collaborative of employee  & manager."
+        "answer": "It is the joint and collaborative of employee  & manager"
 
     }
 
