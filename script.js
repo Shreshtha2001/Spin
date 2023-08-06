@@ -55,7 +55,7 @@ var data = [
 
         "question": "Who can help the manager with the additional support related to performance process?",
 
-        "answer": "HR Advisor"
+        "answer": "HR ADVISOR/People Relations Partner"
 
     },
 
@@ -67,7 +67,7 @@ var data = [
 
         "question": "​​What topics can be discussed in SAP talk?",
 
-        "answer": "Performance Discussions and Working Conditions and development"
+        "answer": "Performance goals, working Conditions and personal development"
 
     },
 
@@ -77,7 +77,7 @@ var data = [
 
         "value": 4,
 
-        "question": "​Name the channel where we can talk to external experts about all life challenges anonymously around the clock?",
+        "question": "Name the channel where we can talk to external experts about all life challenges anonymously around the clock",
 
         "answer": "Employee Assistance Program"
 
@@ -89,7 +89,7 @@ var data = [
 
         "value": 5,
 
-        "question": "The practice of sharing regular, constructive responses at work through a series of ongoing and structured conversations between managers and their employees is called? ",
+        "question": "What is the practice of sharing regular, constructive responses at work through a series of ongoing and structured conversations between managers and their employees called ? ",
 
         "answer": "Continuous Feedback"
 
@@ -101,7 +101,7 @@ var data = [
 
         "value": 6,
 
-        "question": "What is the channel used to have a regular, open dialogue between employee and manager? The dialogue is forward-looking and solution-oriented rather than backward-looking?",
+        "question": "What is the channel used to have a regular, open dialogue between an employee and a manager which is forward-looking and solution-oriented ?",
 
         "answer": "SAP Talk"
 
@@ -113,7 +113,7 @@ var data = [
 
         "value": 7,
 
-        "question": "Name the teams who support managers to bring the performance concerns back on track? ",
+        "question": "Name the teams who support managers to bring the performance concerns back on track",
 
         "answer": "People Relations/HR Advisor"
 
@@ -137,7 +137,7 @@ var data = [
 
         "value": 9,
 
-        "question": "​Which process in Manager services enables managers to correct the performance deviations?",
+        "question": "​Which process in Manager Services enables managers to correct performance deviations ?",
 
         "answer": "Manage to Success"
 
@@ -151,7 +151,7 @@ var data = [
 
         "question": "Who is responsible to initiate the SAP Talk?",
 
-        "answer": "It is the joint and collaborative of employee  & manager"
+        "answer": "It is a joint and collaborative effort of employee  & manager"
 
     }
 
