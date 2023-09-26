@@ -41,9 +41,9 @@ var data = [
 
         "value": 1,
 
-        "question": "Name the channel where all employees can talk to external experts about life challenges anonymously around the clock?",
+        "question": "SAP ONEのManager Serviceにあるパフォーマンスに関するプロセスのことをなんと言うでしょう？",
 
-        "answer": "Employee Assistance Program"
+        "answer": "Manage to Success"
 
     },
 
@@ -53,9 +53,9 @@ var data = [
 
         "value": 2,
 
-        "question": "The practice of sharing regular constructive feedback at work through a series of ongoing and structured conversations between managers and their employees is called what? ",
+        "question": "マネージャと社員とで交わされる建設的なフィードバックや日常的に行われる会話を何と言うでしょうか。",
 
-        "answer": "Continuous Feedback"
+        "answer": "継続的なフィードバック"
 
     },
 
@@ -65,7 +65,7 @@ var data = [
 
         "value": 3,
 
-        "question": "What is the channel used to have a regular, open dialogue between employee and manager? The dialogue is forward looking and solution oriented rather than backward looking?",
+        "question": "マネージャと社員の間で定期的に行われオープンな会話をするためのSAPの仕組みはなんでしょう？ここでの会話は過去の振り返りよりも将来を見通した問題解決提案型の会話をさします。",
 
         "answer": "SAP Talk"
 
@@ -77,9 +77,9 @@ var data = [
 
         "value": 4,
 
-        "question": "Which process in Manager Services provide managers with information on how to  address performance concerns?",
+        "question": "SAP Talkを主導するのは誰でしょうか？",
 
-        "answer": "Manage to Success"
+        "answer": "社員とマネージャ双方が実施するものです。"
 
     },
 
@@ -89,9 +89,9 @@ var data = [
 
         "value": 5,
 
-        "question": "Who is responsible to initiate an SAP Talk?",
+        "question": "全社員が外部の専門家に様々な個人的な問題を相談できる窓口を何と呼ぶでしょうか。",
 
-        "answer": "It is responsibility of both employee and manager"
+        "answer": "Employee Assistance Program（EAP)"
 
     }
 ];
