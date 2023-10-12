@@ -41,9 +41,9 @@ var data = [
 
         "value": 1,
 
-        "question": "SAP ONEのManager Serviceにあるパフォーマンスに関するプロセスのことをなんと言うでしょう？",
+        "question": "Name the channel where we can talk to external experts about all life challenges anonymously  around the clock.",
 
-        "answer": "Manage to Success"
+        "answer": "Employee Assistance Program"
 
     },
 
@@ -53,9 +53,9 @@ var data = [
 
         "value": 2,
 
-        "question": "人事に関する最初の問い合わせ窓口を何と言うでしょうか。？",
+        "question": "The practice of sharing regular, constructive response at work through a series of ongoing and structured conversations between managers and their employees is called ?",
 
-        "answer": "HRdirect"
+        "answer": "Continuous Feedback"
 
     },
 
@@ -65,7 +65,7 @@ var data = [
 
         "value": 3,
 
-        "question": "マネージャと社員の間で定期的に行われオープンな会話をするためのSAPの仕組みはなんでしょう？ここでの会話は過去の振り返りよりも将来を見通した問題解決提案型の会話をさします。",
+        "question": "What is the channel used to have regular, open dialogue between employee and manager. The dialogue is forward-looking and solution oriented rather than backward-looking?",
 
         "answer": "SAP Talk"
 
@@ -77,9 +77,9 @@ var data = [
 
         "value": 4,
 
-        "question": "SAP Talkを主導するのは誰でしょうか？",
+        "question": "What topics can be discussed in SAP talk?",
 
-        "answer": "社員とマネージャ双方が実施するものです。"
+        "answer": "Performance Discussions and Working Conditions and development"
 
     },
 
@@ -89,20 +89,64 @@ var data = [
 
         "value": 5,
 
-        "question": "マネージャと社員とが日常的に交わすコミュニケーションで大切なことはなんでしょう？",
+        "question": "Which platform enables to collect feedback from peers, managers and other stakeholders?",
 
-        "answer": "継続的なフィードバックやサポート"
+        "answer": "360 degree feedback"
 
     },
-    	{
+	{
 
         "label": "6",
 
         "value": 6,
 
-        "question": "全社員が外部の専門家に様々な個人的な問題を相談できる窓口を何と呼ぶでしょうか。",
+        "question": "Name the teams who support managers to bring the performance concerns back on track.",
 
-        "answer": "Employee Assistance Program（EAP)"
+        "answer": "People Relations/HR advisor"
+
+    },
+	{
+
+        "label": "7",
+
+        "value": 7,
+
+        "question": "Who is responsible to initiate the SAP Talk?",
+
+        "answer": "It is the joint and collaborative effort of employee & manager."
+
+    },
+	{
+
+        "label": "8",
+
+        "value": 8,
+
+        "question": "Which process in Success map enables managers to correct the performance deviations?",
+
+        "answer": "Manage to Success"
+
+    },
+	{
+
+        "label": "9",
+
+        "value": 9,
+
+        "question": "which goal-setting methodology is designed to create high quality goals?",
+
+        "answer": "SMART"
+
+    },
+    	{
+
+        "label": "10",
+
+        "value": 10,
+
+        "question": "Who can help manager with the additional support related to performance process?",
+
+        "answer": "HRA"
 
     }
 ];
