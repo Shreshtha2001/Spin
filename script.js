@@ -41,7 +41,7 @@ var data = [
 
         "value": 1,
 
-        "question": "What is the channel used to have a regular, open dialogue between employee and manager? The dialogue is forward-looking and solution-oriented rather than backward-looking?",
+        "question": "What is the channel used to have a regular, open dialogue between employee and manager? The dialogue is forward-looking and solution-oriented rather than backward-looking",
 
         "answer": "SAP Talk"
 
@@ -53,9 +53,9 @@ var data = [
 
         "value": 2,
 
-        "question": "What topics can be discussed in SAP talk?",
+        "question": "Who is responsible to initiate the SAP Talk",
 
-        "answer": "Performance, Working condition & Development"
+        "answer": "It is the joint and collaborative approach of both employee and manager"
 
     },
 
@@ -65,7 +65,7 @@ var data = [
 
         "value": 3,
 
-        "question": "Which team supports to mediate the conflict situation?",
+        "question": "Which process in Success map enables managers to correct the performance deviations?",
 
         "answer": "Ombuds office/Conflict experts"
 
@@ -81,29 +81,19 @@ var data = [
 
         "answer": "People Relations/HR Advisor"
 
-    },
-
-{
-
-        "label": "5",
-
-        "value": 5,
-
-        "question": "Which platform enables to collect feedback from peers, managers and other stakeholders?",
-
-        "answer": "360 degree feedback"
+    
 
     },
 	
     	{
 
-        "label": "6",
+        "label": "5",
 
-        "value": 6,
+        "value": 5,
 
-        "question": "Which channel on the system supports managers with non-performance management ? ",
+        "question": "Who can help manager with the additional support related to performance process",
 
-        "answer": "Manage to Success"
+        "answer": "HRA"
 
     }
 ];
