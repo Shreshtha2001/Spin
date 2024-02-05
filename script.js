@@ -67,7 +67,7 @@ var data = [
 
         "question": "Which process in Success map enables managers to correct the performance deviations?",
 
-        "answer": "Ombuds office/Conflict experts"
+        "answer": "Manage to success"
 
     },
 
