@@ -71,11 +71,71 @@ var data = [
 
     },
 
-    {
+	{
 
         "label": "4",
 
         "value": 4,
+
+        "question": "The 12th HR showcase 2 day conference hosted  by NHRD  is dedicated to  which topic ? ",
+
+        "answer": "Augmenting Human Intelligence with AI"
+
+        },
+
+	{
+
+        "label": "5",
+
+        "value": 5,
+
+        "question": "In which year SAP in India began its operations ? ",
+
+        "answer": "SAP in India began its operations in 1996 with headquarters in Bangalore and offices in Mumbai, New Delhi, Kolkata"
+
+    },
+
+	{
+
+        "label": "6",
+
+        "value": 6,
+
+        "question": "In which year NHRD Bangalore chapter was established ? ",
+
+        "answer": "1989"
+
+    },
+
+	{
+
+        "label": "7",
+
+        "value": 7,
+
+        "question": "How are you feeling today ? ",
+
+        "answer": "Thank you for thinking through and giving a pause"
+
+    },
+
+	{
+
+        "label": "8",
+
+        "value": 8,
+
+        "question": "Which is a goal-setting methodology designed to create high quality goals ?",
+
+        "answer": "SMART"
+
+    },
+
+    {
+
+        "label": "9",
+
+        "value": 9,
 
         "question": "Name the teams who support managers to bring the performance concerns back on track.",
 
@@ -87,9 +147,9 @@ var data = [
 	
     	{
 
-        "label": "5",
+        "label": "10",
 
-        "value": 5,
+        "value": 10,
 
         "question": "Who can help manager with the additional support related to performance process",
 
