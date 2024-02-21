@@ -77,9 +77,9 @@ var data = [
 
         "value": 4,
 
-        "question": "The 12th HR showcase 2 day conference hosted  by NHRD  is dedicated to  which topic ? ",
+        "question": "What topics can be discussed in SAP Talk? ",
 
-        "answer": "Augmenting Human Intelligence with AI"
+        "answer": "Performance discussions , working conditions and development"
 
         },
 
@@ -89,9 +89,9 @@ var data = [
 
         "value": 5,
 
-        "question": "In which year SAP in India began its operations ? ",
+        "question": "Which goal setting methodology is designed to create high quality goals ? ",
 
-        "answer": "SAP in India began its operations in 1996 with headquarters in Bangalore and offices in Mumbai, New Delhi, Kolkata"
+        "answer": "SMART"	
 
     },
 
@@ -101,9 +101,9 @@ var data = [
 
         "value": 6,
 
-        "question": "In which year NHRD Bangalore chapter was established ? ",
+        "question": "Which platform enables to collect feedback from peers, managers and other stakeholders ? ",
 
-        "answer": "1989"
+        "answer": "360 degree feedback"
 
     },
 
@@ -125,9 +125,9 @@ var data = [
 
         "value": 8,
 
-        "question": "Which is a goal-setting methodology designed to create high quality goals ?",
+        "question": "The practice of sharing regular , constructive response at work through a series of ongoing and structured conversations between managers and their employees is called ?",
 
-        "answer": "SMART"
+        "answer": "Constructive Feedback"
 
     },
 
