@@ -64,11 +64,10 @@ var data = [
 
         "value": 3,
 
-        "question": "Name the initiative channel where we can talk to external experts about all life challenges anonymously around the clock.",
-        "question": "Name the initiative channel where we can talk to external experts about all life challenges anonymously around the clock.",
+        "question": "Name the initiative channel where we can talk to external experts about all life challenges anonymously around the clock."
 
         "answer": "Employee Assistance Program"
-        "answer": "Employee Assistance Program"
+        
 
     },
 
