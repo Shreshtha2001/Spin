@@ -41,9 +41,9 @@ var data = [
 
         "value": 1,
 
-        "question": "What is the channel used to have a regular, open dialogue between employee and manager? The dialogue is forward-looking and solution-oriented rather than backward-looking",
+        "question": "What topics can be discussed in Performance Conversations ?",
 
-        "answer": "SAP Talk"
+        "answer": "Performance Discussions and Working Conditions and development"
 
     },
 
@@ -53,9 +53,9 @@ var data = [
 
         "value": 2,
 
-        "question": "Who is responsible to initiate the SAP Talk",
+        "question": "Who is responsible to initiate the Performance Conversation  ?",
 
-        "answer": "It is the joint and collaborative approach of both employee and manager"
+        "answer": "It is the joint and collaborative approach of employee  & manager"
 
     },
 
@@ -65,9 +65,9 @@ var data = [
 
         "value": 3,
 
-        "question": "Which process in Success map enables managers to correct the performance deviations?",
+        "question": "Name the initiative channel where we can talk to external experts about all life challenges anonymously around the clock.",
 
-        "answer": "Manage to success"
+        "answer": "Employee Assistance Program"
 
     },
 
@@ -77,9 +77,9 @@ var data = [
 
         "value": 4,
 
-        "question": "What topics can be discussed in SAP Talk? ",
+        "question": "What is the one word that can make anyone instantly happy on a Friday ?",
 
-        "answer": "Performance discussions , working conditions and development"
+        "answer": " Weekend"
 
         },
 
@@ -113,9 +113,9 @@ var data = [
 
         "value": 7,
 
-        "question": "How are you feeling today ? ",
+        "question": "Which skill involves giving the speaker your full attention to show that you understand their message on all levels ?",
 
-        "answer": "Thank you for thinking through and giving a pause"
+        "answer": "Active listening"
 
     },
 
@@ -125,9 +125,9 @@ var data = [
 
         "value": 8,
 
-        "question": "The practice of sharing regular , constructive response at work through a series of ongoing and structured conversations between managers and their employees is called ?",
+        "question": "What refers to the mentality that employees must work more than normal hours to advance their careers ?",
 
-        "answer": "Constructive Feedback"
+        "answer": "Hustle culture"
 
     },
 
@@ -137,9 +137,9 @@ var data = [
 
         "value": 9,
 
-        "question": "Name the teams who support managers to bring the performance concerns back on track.",
+        "question": "Which  is a form of psychological manipulation to mislead someone to self doubt ?",
 
-        "answer": "People Relations/HR Advisor"
+        "answer": "Gaslighting"
 
     
 
