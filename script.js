@@ -141,18 +141,8 @@ var data = [
  
     
  
-    },
-    	{
- 
-        "label": "10",
- 
-        "value": 10,
- 
-        "question": "Who can help manager with the additional support related to performance process",
- 
-        "answer": "HRA"
- 
     }
+    	
 ];
  
   
