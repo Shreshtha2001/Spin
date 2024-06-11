@@ -141,6 +141,19 @@ var data = [
  
     
  
+    },
+	{
+ 
+        "label": "10",
+ 
+        "value": 10,
+ 
+        "question": "Which is a form of psychological manipulation to mislead someone to self doubt",
+ 
+        "answer": "Gaslighting"
+ 
+    
+ 
     }
     	
 ];
