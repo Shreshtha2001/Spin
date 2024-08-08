@@ -51,9 +51,9 @@ var data = [
  
         "value": 2,
  
-        "question": "What topics can be discussed in Performance Conversations ? ",
+        "question": "Who can help manager with the additional support related to performance process?",
  
-        "answer": "Performance Discussions and Working Conditions and development"
+        "answer": "HRA"
  
     },
  
@@ -63,9 +63,9 @@ var data = [
  
         "value": 3,
  
-        "question": "Name the initiative channel where we can talk to external experts about all life challenges anonymously around the clock.",
+        "question": "What topics can be discussed in SAP talk?",
  
-        "answer": "Employee Assistance Program"
+        "answer": "Performance Discussions and Working Conditions and development"
  
     },
  
@@ -75,9 +75,9 @@ var data = [
  
         "value": 4,
  
-        "question": "Which platform enables to collect feedback from peers, managers and other stakeholders ?",
+        "question": "Name the initiative channel where we can talk to external experts about all life challenges anonymously around the clock.",
  
-        "answer": "360 feedback"
+        "answer": "Employee Assistance Program"
  
         },
  
@@ -87,9 +87,9 @@ var data = [
  
         "value": 5,
  
-        "question": "Top Employer certification is done across how many countries ?",
+        "question": "The practice of sharing regular, constructive response at work through a series of ongoing and structured conversations between managers and their employees is called ?",
  
-        "answer": "121"	
+        "answer": "Continuous Feedback"	
  
     },
  
@@ -99,9 +99,9 @@ var data = [
  
         "value": 6,
  
-        "question": "Which skill involves giving the speaker your full attention to show that you understand their message on all levels?",
+        "question": "What is the channel used to have regular, open dialogue between employee and manager. The dialogue is forward-looking and solution oriented rather than backward-looking.",
  
-        "answer": "Active listening"
+        "answer": "SAP Talk"
  
     },
  
@@ -111,9 +111,9 @@ var data = [
  
         "value": 7,
  
-        "question": "What is the one word that can make anyone instantly happy on a Friday?",
+        "question": "Name the teams who support managers to bring the performance concerns back on track.",
  
-        "answer": "Weekend"
+        "answer": "People Relations/HR advisor"
  
     },
  
@@ -123,9 +123,9 @@ var data = [
  
         "value": 8,
  
-        "question": "What refers to the mentality that employees must work more than normal hours to advance their careers.",
+        "question": "Which platform enables to collect feedback from peers, managers and other stakeholders ?",
  
-        "answer": "Hustle culture"
+        "answer": "360 feedback"
  
     },
  
@@ -135,9 +135,9 @@ var data = [
  
         "value": 9,
  
-        "question": "Which is a form of psychological manipulation to mislead someone to self doubt",
+        "question": "Which process in Success map enables managers to correct the performance deviations?",
  
-        "answer": "Gaslighting"
+        "answer": "Manage to Success"
  
     
  
@@ -148,9 +148,9 @@ var data = [
  
         "value": 10,
  
-        "question": "Which is a form of psychological manipulation to mislead someone to self doubt",
+        "question": "Who is responsible to initiate the SAP Talk?",
  
-        "answer": "Gaslighting"
+        "answer": "It is the joint It is the joint and collaborative of employee  & manager."
  
     
  
