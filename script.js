@@ -51,9 +51,9 @@ var data = [
  
         "value": 2,
  
-        "question": "Who can help manager with the additional support related to performance process?",
+        "question": "What is the essential skill for ensuring the feedback receiver feels understood ?",
  
-        "answer": "HRA"
+        "answer": "Active Listening"
  
     },
  
@@ -99,9 +99,9 @@ var data = [
  
         "value": 6,
  
-        "question": "What is the channel used to have regular, open dialogue between employee and manager. The dialogue is forward-looking and solution oriented rather than backward-looking.",
+        "question": "What term describes the process of helping employees understand and achieve their potential ?",
  
-        "answer": "SAP Talk"
+        "answer": "Coaching"
  
     },
  
@@ -111,9 +111,9 @@ var data = [
  
         "value": 7,
  
-        "question": "Name the teams who support managers to bring the performance concerns back on track.",
+        "question": "What is the recommended number of goals ?",
  
-        "answer": "People Relations/HR advisor"
+        "answer": "5 ( Including the Strategic/L1 goals)"
  
     },
  
@@ -135,9 +135,9 @@ var data = [
  
         "value": 9,
  
-        "question": "Which process in Success map enables managers to correct the performance deviations?",
+        "question": "What should be the overall weightage of all my goals put together ?",
  
-        "answer": "Manage to Success"
+        "answer": "100%"
  
     
  
@@ -148,9 +148,9 @@ var data = [
  
         "value": 10,
  
-        "question": "Who is responsible to initiate the SAP Talk?",
+        "question": "Can I add or modify my goals  or change the weightage during  the year ?",
  
-        "answer": "It is the joint It is the joint and collaborative of employee  & manager."
+        "answer": "Yes, you need to be in alignment with the manager"
  
     
  
