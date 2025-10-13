@@ -41,7 +41,7 @@ var data = [
  
         "question": "Once the Progress Check-In is complete, there is no need for further alignment until Q4.",
  
-        "answer": "MYTH : Continuous feedback and check-ins are expected year-round, not just during formal check-ins."
+        "answer": "MYTH-Continuous feedback and check-ins are expected year-round, not just during formal check-ins."
  
     },
  
@@ -53,7 +53,7 @@ var data = [
  
         "question": "The Progress Check-In is primarily for underperformers and isn't relevant if everything is going smoothly.",
  
-        "answer": "MYTH : It's for everyone, not just those facing challenges. It ensures ongoing alignment and recognizes progress across the board."
+        "answer": "MYTH-It's for everyone, not just those facing challenges, It ensures ongoing alignment and recognizes progress across the board."
  
     },
  
@@ -65,7 +65,7 @@ var data = [
  
         "question": "The Progress Check-In includes both a review of goal progress and observed behaviors.",
  
-        "answer": "FACT : It's meant to assess both "WHAT" and "HOW"."
+        "answer": "FACT : It's meant to assess both WHAT and HOW."
  
     },
  
