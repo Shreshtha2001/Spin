@@ -21,8 +21,8 @@ var data = [
     {
         "label": "1",
         "value": 1,
-        "question": "Which goal-setting methodology is designed to create high quality goals ?",
-        "answer": "SMART"
+        "question": "Once the Progress Check-In is complete, there is no need for further alignment until Q4.",
+        "answer": "MYTH: Continuous feedback and check-ins are expected year-round, not just during formal check-ins."
     },
     {
         "label": "2",
