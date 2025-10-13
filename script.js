@@ -27,57 +27,57 @@ var data = [
     {
         "label": "2",
         "value": 2,
-        "question": "What topics can be discussed in Performance Conversations ? ",
-        "answer": "Performance Discussions and Working Conditions and development"
+        "question": "The Progress Check-In is primarily for underperformers and isn't relevant if everything is going smoothly. ",
+        "answer": "MYTH: It's for everyone, not just those facing challenges.It ensures ongoing alignment and recognizes progress across the board."
     },
     {
         "label": "3",
         "value": 3,
-        "question": "Name the initiative channel where we can talk to external experts about all life challenges anonymously around the clock.",
-        "answer": "Employee Assistance Program"
+        "question": "The Progress Check-In includes both a review of goal progress and observed behaviors.",
+        "answer": "FACT: It's meant to assess both WHAT and HOW."
     },
 	{
         "label": "4",
         "value": 4,
-        "question": "Which platform enables to collect feedback from peers, managers and other stakeholders ?",
-        "answer": "360 feedback"
+        "question": "If a goal becomes irrelevant during the year, it should be deleted and not considered in the final evaluation.",
+        "answer": "MYTH: If work was completed, the goal should still be evaluated with adjusted weighting, even if it's no longer valid for the current role."
         },
 	{
         "label": "5",
         "value": 5,
-        "question": "Top Employer certification is done across how many countries ?",
-        "answer": "121"	
+        "question": "SAP's evaluation process combines both achievement and behavior for a complete picture.",
+        "answer": "FACT: Performance is evaluated using a holistic approach that incorporates WHAT was achieved and HOW it was achieved."	
     },
 	{
         "label": "6",
         "value": 6,
-        "question": "Which skill involves giving the speaker your full attention to show that you understand their message on all levels?",
-        "answer": "Active listening"
+        "question": "Once a performance zone is assigned, there's no flexibility to adjust it.",
+        "answer": "MYTH: Managers have discretion to adjust performance zones in special cases based on consistent trends or unique contributions."
     },
 	{
         "label": "7",
         "value": 7,
-        "question": "What is the one word that can make anyone instantly happy on a Friday?",
-        "answer": "Weekend"
+        "question": "The performance zone is based only on final results from Q4.",
+        "answer": "MYTH: The performance zone reflects the entire year's performance. It considers input from all SAP Talks, goal progress, context, and feedback-not just Q4 outcomes."
     },
 	{
         "label": "8",
         "value": 8,
-        "question": "What refers to the mentality that employees must work more than normal hours to advance their careers.",
-        "answer": "Hustle culture"
+        "question": "Performance management is a shared responsibility between employees and managers.",
+        "answer": "FACT: Employees are expected to take ownership of their goals and development, while managers provide guidance and feedback throughout the year."
     },
     {
         "label": "9",
         "value": 9,
-        "question": "Which is a form of psychological manipulation to mislead someone to self doubt",
-        "answer": "Gaslighting"
+        "question": "The performance zone is determined solely by the employee's goal achievement.",
+        "answer": "MYTH: It's based on both WHAT (results) and HOW (behaviors), not goals alone."
     
     },
 	{
         "label": "10",
         "value": 10,
-        "question": "Which is a form of psychological manipulation to mislead someone to self doubt",
-        "answer": "Gaslighting"
+        "question": "If someone didn't achieve one goal, they cannot be placed in the Achievement Zone.",
+        "answer": "MYTH: One missed goal does not automatically lead to Improvement Zone. Overall performance and weighting matter."
     
     }
     	
