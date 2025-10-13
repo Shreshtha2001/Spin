@@ -39,9 +39,9 @@ var data = [
  
         "value": 1,
  
-        "question": "Which goal-setting methodology is designed to create high quality goals ?",
+        "question": "Once the Progress Check-In is complete, there is no need for further alignment until Q4.",
  
-        "answer": "SMART"
+        "answer": "MYTH : Continuous feedback and check-ins are expected year-round, not just during formal check-ins."
  
     },
  
@@ -51,9 +51,9 @@ var data = [
  
         "value": 2,
  
-        "question": "What is the essential skill for ensuring the feedback receiver feels understood ?",
+        "question": "The Progress Check-In is primarily for underperformers and isn't relevant if everything is going smoothly.",
  
-        "answer": "Active Listening"
+        "answer": "MYTH : It's for everyone, not just those facing challenges. It ensures ongoing alignment and recognizes progress across the board."
  
     },
  
@@ -63,9 +63,9 @@ var data = [
  
         "value": 3,
  
-        "question": "What topics can be discussed in SAP talk?",
+        "question": "The Progress Check-In includes both a review of goal progress and observed behaviors.",
  
-        "answer": "Performance Discussions and Working Conditions and development"
+        "answer": "FACT : It's meant to assess both "WHAT" and "HOW"."
  
     },
  
@@ -75,9 +75,9 @@ var data = [
  
         "value": 4,
  
-        "question": "Name the initiative channel where we can talk to external experts about all life challenges anonymously around the clock.",
+        "question": "If a goal becomes irrelevant during the year, it should be deleted and not considered in the final evaluation.",
  
-        "answer": "Employee Assistance Program"
+        "answer": "MYTH : If work was completed, the goal should still be evaluated with adjusted weighting, even if it's no longer valid for the current role."
  
         },
  
@@ -87,9 +87,9 @@ var data = [
  
         "value": 5,
  
-        "question": "The practice of sharing regular, constructive response at work through a series of ongoing and structured conversations between managers and their employees is called ?",
+        "question": "The performance zone is based only on final results from Q4.",
  
-        "answer": "Continuous Feedback"	
+        "answer": "MYTH : The performance zone reflects the entire year's performance. It considers input from all SAP Talks, goal progress, context, and feedback-not just Q4 outcomes."	
  
     },
  
@@ -99,9 +99,9 @@ var data = [
  
         "value": 6,
  
-        "question": "What term describes the process of helping employees understand and achieve their potential ?",
+        "question": "SAP's evaluation process combines both achievement and behavior for a complete picture.",
  
-        "answer": "Coaching"
+        "answer": "FACT: Performance is evaluated using a holistic approach that incorporates WHAT was achieved and HOW it was achieved."
  
     },
  
@@ -111,9 +111,9 @@ var data = [
  
         "value": 7,
  
-        "question": "What is the recommended number of goals ?",
+        "question": "Once a performance zone is assigned, there's no flexibility to adjust it.",
  
-        "answer": "5 ( Including the Strategic/L1 goals)"
+        "answer": "MYTH : Managers have discretion to adjust performance zones in special cases based on consistent trends or unique contributions."
  
     },
  
@@ -123,9 +123,9 @@ var data = [
  
         "value": 8,
  
-        "question": "Which platform enables to collect feedback from peers, managers and other stakeholders ?",
+        "question": "Performance management is a shared responsibility between employees and managers.",
  
-        "answer": "360 feedback"
+        "answer": "FACT: Employees are expected to take ownership of their goals and development, while managers provide guidance and feedback throughout the year."
  
     },
  
@@ -135,9 +135,9 @@ var data = [
  
         "value": 9,
  
-        "question": "What should be the overall weightage of all my goals put together ?",
+        "question": "The performance zone is determined solely by the employee's goal achievement.",
  
-        "answer": "100%"
+        "answer": "MYTH : It's based on both WHAT (results) and HOW (behaviors), not goals alone."
  
     
  
@@ -148,9 +148,9 @@ var data = [
  
         "value": 10,
  
-        "question": "Can I add or modify my goals  or change the weightage during  the year ?",
+        "question": "If someone didn't achieve one goal, they cannot be placed in the Achievement Zone.",
  
-        "answer": "Yes, you need to be in alignment with the manager"
+        "answer": "MYTH : One missed goal does not automatically lead to Improvement Zone. Overall performance and weighting matter."
  
     
  
