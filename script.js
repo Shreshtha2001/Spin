@@ -53,7 +53,7 @@ var data = [
  
         "question": "The Progress Check-In is primarily for underperformers and isn't relevant if everything is going smoothly.",
  
-        "answer": "MYTH-It's for everyone, not just those facing challenges, It ensures ongoing alignment and recognizes progress across the board."
+        "answer": "MYTH-It's for everyone, not just those facing challenges, it ensures ongoing alignment and recognizes progress across the board."
  
     },
  
@@ -65,7 +65,7 @@ var data = [
  
         "question": "The Progress Check-In includes both a review of goal progress and observed behaviors.",
  
-        "answer": "FACT : It's meant to assess both WHAT and HOW."
+        "answer": "FACT-It's meant to assess both WHAT and HOW."
  
     },
  
@@ -77,7 +77,7 @@ var data = [
  
         "question": "If a goal becomes irrelevant during the year, it should be deleted and not considered in the final evaluation.",
  
-        "answer": "MYTH : If work was completed, the goal should still be evaluated with adjusted weighting, even if it's no longer valid for the current role."
+        "answer": "MYTH-If work was completed, the goal should still be evaluated with adjusted weighting, even if it's no longer valid for the current role."
  
         },
  
@@ -89,7 +89,7 @@ var data = [
  
         "question": "The performance zone is based only on final results from Q4.",
  
-        "answer": "MYTH : The performance zone reflects the entire year's performance. It considers input from all SAP Talks, goal progress, context, and feedback-not just Q4 outcomes."	
+        "answer": "MYTH-The performance zone reflects the entire year's performance, it considers input from all SAP Talks, goal progress, context, and feedback-not just Q4 outcomes."	
  
     },
  
@@ -101,7 +101,7 @@ var data = [
  
         "question": "SAP's evaluation process combines both achievement and behavior for a complete picture.",
  
-        "answer": "FACT: Performance is evaluated using a holistic approach that incorporates WHAT was achieved and HOW it was achieved."
+        "answer": "FACT-Performance is evaluated using a holistic approach that incorporates WHAT was achieved and HOW it was achieved."
  
     },
  
@@ -113,7 +113,7 @@ var data = [
  
         "question": "Once a performance zone is assigned, there's no flexibility to adjust it.",
  
-        "answer": "MYTH : Managers have discretion to adjust performance zones in special cases based on consistent trends or unique contributions."
+        "answer": "MYTH-Managers have discretion to adjust performance zones in special cases based on consistent trends or unique contributions."
  
     },
  
@@ -125,7 +125,7 @@ var data = [
  
         "question": "Performance management is a shared responsibility between employees and managers.",
  
-        "answer": "FACT: Employees are expected to take ownership of their goals and development, while managers provide guidance and feedback throughout the year."
+        "answer": "FACT-Employees are expected to take ownership of their goals and development, while managers provide guidance and feedback throughout the year."
  
     },
  
@@ -137,7 +137,7 @@ var data = [
  
         "question": "The performance zone is determined solely by the employee's goal achievement.",
  
-        "answer": "MYTH : It's based on both WHAT (results) and HOW (behaviors), not goals alone."
+        "answer": "MYTH-It's based on both WHAT (results) and HOW (behaviors), not goals alone."
  
     
  
@@ -150,7 +150,7 @@ var data = [
  
         "question": "If someone didn't achieve one goal, they cannot be placed in the Achievement Zone.",
  
-        "answer": "MYTH : One missed goal does not automatically lead to Improvement Zone. Overall performance and weighting matter."
+        "answer": "MYTH-One missed goal does not automatically lead to Improvement Zone, Overall performance and weighting matter."
  
     
  
