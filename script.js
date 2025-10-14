@@ -69,8 +69,8 @@ var data = [
     {
         "label": "9",
         "value": 9,
-        "question": "Employees placed in the Improvement Zone during the Progress Check-In will automatically be placed there in the year-end evaluation as well.",
-        "answer": "MYTH: The Q3 zone is an interim snapshot. Employees can improve and move to a different zone by year-end based on their progress, development, and support received."
+        "question": "Once a performance zone is assigned, there's no flexibility to adjust it.",
+        "answer": "MYTH: Managers have discretion to adjust performance zones in special cases based on consistent trends or unique contributions."
     
     },
 	{
@@ -160,7 +160,8 @@ function spin(d) {
                 .text(data[picked].question);
             d3.select("#answer h2")
                 .text(data[picked].answer)
-				.style("font-size", "20px");
+				.style("font-size", "19px")
+				.style("font-weight", "normal");
             oldrotation = rotation;
             answerDiv.style.visibility = "hidden"
             /* Get the result value from object "data" */
