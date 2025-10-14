@@ -159,7 +159,8 @@ function spin(d) {
             d3.select("#question h2")
                 .text(data[picked].question);
             d3.select("#answer h2")
-                .text(data[picked].answer);
+                .text(data[picked].answer)
+				.style("font-size", "20px");
             oldrotation = rotation;
             answerDiv.style.visibility = "hidden"
             /* Get the result value from object "data" */
