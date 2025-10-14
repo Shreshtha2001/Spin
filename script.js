@@ -45,8 +45,8 @@ var data = [
 	{
         "label": "5",
         "value": 5,
-        "question": "SAP's evaluation process combines both achievement and behavior for a complete picture.",
-        "answer": "FACT: Performance is evaluated using a holistic approach that incorporates WHAT was achieved and HOW it was achieved."	
+        "question": "Employees placed in the Improvement Zone during the Progress Check-In will automatically be placed there in the year-end evaluation as well.",
+        "answer": "MYTH: The Q3 zone is an interim snapshot. Employees can improve and move to a different zone by year-end based on their progress, development, and support received."	
     },
 	{
         "label": "6",
@@ -69,15 +69,15 @@ var data = [
     {
         "label": "9",
         "value": 9,
-        "question": "The performance zone is determined solely by the employee's goal achievement.",
-        "answer": "MYTH: It's based on both WHAT (results) and HOW (behaviors), not goals alone."
+        "question": "Employees placed in the Improvement Zone during the Progress Check-In will automatically be placed there in the year-end evaluation as well.",
+        "answer": "MYTH: The Q3 zone is an interim snapshot. Employees can improve and move to a different zone by year-end based on their progress, development, and support received."
     
     },
 	{
         "label": "10",
         "value": 10,
-        "question": "If someone didn't achieve one goal, they cannot be placed in the Achievement Zone.",
-        "answer": "MYTH: One missed goal does not automatically lead to Improvement Zone. Overall performance and weighting matter."
+        "question": "No documented feedbacks are required to initiate PIP ?",
+        "answer": "MYTH: At least two documented feedbacks are necessary to initiate the PIP."
     
     }
     	
