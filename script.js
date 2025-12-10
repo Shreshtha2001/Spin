@@ -22,56 +22,56 @@ var data = [
     {
         "label": "1",
         "value": 1,
-        "question": "Once the Progress Check-In is complete, there is no need for further alignment until Q4.",
-        "answer": "MYTH: Continuous feedback and check-ins are expected year-round, not just during formal check-ins."
+        "question": "Performance management is a shared responsibility between employees and managers.",
+        "answer": "FACT - Employees are expected to take ownership of their goals and development, while managers provide guidance and feedback throughout the year."
     },
     {
         "label": "2",
         "value": 2,
-        "question": "The Progress Check-In is primarily for underperformers and isn't relevant if everything is going smoothly. ",
-        "answer": "MYTH: It's for everyone, not just those facing challenges.It ensures ongoing alignment and recognizes progress across the board."
+        "question": "Managers have no discretion in assigning performance zones; they are strictly determined by rating scale calculations.",
+        "answer": "MYTH – Managers can exercise discretion for boundary cases when allocating zones. "
     },
     {
         "label": "3",
         "value": 3,
-        "question": "The Progress Check-In includes both a review of goal progress and observed behaviors.",
-        "answer": "FACT: It's meant to assess both WHAT and HOW."
+        "question": "Performance management is only about annual reviews",
+        "answer": "MYTH - It’s an ongoing process of feedback and development, not a once-a-year event."
     },
 	{
         "label": "4",
         "value": 4,
-        "question": "If a goal becomes irrelevant during the year, it should be deleted and not considered in the final evaluation.",
-        "answer": "MYTH: If work was completed, the goal should still be evaluated with adjusted weighting, even if it's no longer valid for the current role."
+        "question": "What plays the most important role in performance evaluation — WHAT (goals) or HOW (behaviors)?",
+        "answer": "MYTH – Both WHAT and HOW are equally important components of the evaluation."
         },
 	{
         "label": "5",
         "value": 5,
-        "question": "Employees placed in the Improvement Zone during the Progress Check-In will automatically be placed there in the year-end evaluation as well.",
-        "answer": "MYTH: The Q3 zone is an interim snapshot. Employees can improve and move to a different zone by year-end based on their progress, development, and support received."	
+        "question": "Being prompt, clear, and consistent in addressing performance concerns is optional for managers.",
+        "answer": "MYTH – It’s a critical responsibility for leaders to ensure fairness, engagement, and legal compliance."	
     },
 	{
         "label": "6",
         "value": 6,
-        "question": "Once a performance zone is assigned, there's no flexibility to adjust it.",
-        "answer": "MYTH: Managers have discretion to adjust performance zones in special cases based on consistent trends or unique contributions."
+        "question": "If a goal becomes irrelevant during the year, it should be deleted and not considered in the final evaluation.",
+        "answer": "MYTH - If work was completed, the goal should still be evaluated with adjusted weighting, even if it's no longer valid for the current role."
     },
 	{
         "label": "7",
         "value": 7,
-        "question": "The performance zone is based only on final results from Q4.",
-        "answer": "MYTH: The performance zone reflects the entire year's performance. It considers input from all SAP Talks, goal progress, context, and feedback-not just Q4 outcomes."
+        "question": "Employees placed in the Improvement Zone during the Progress Check-In will automatically be placed there in the year-end evaluation as well.",
+        "answer": "MYTH - The Q3 zone is an interim snapshot. Employees can improve and move to a different zone by year-end based on their progress, development, and support received."
     },
 	{
         "label": "8",
         "value": 8,
-        "question": "Performance management is a shared responsibility between employees and managers.",
-        "answer": "FACT: Employees are expected to take ownership of their goals and development, while managers provide guidance and feedback throughout the year."
+        "question": "Once the Progress Check-In is complete, there is no need for further alignment until Q4.",
+        "answer": "MYTH: Continuous feedback and check-ins are expected year-round, not just during formal check-ins."
     },
     {
         "label": "9",
         "value": 9,
-        "question": "Once a performance zone is assigned, there's no flexibility to adjust it.",
-        "answer": "MYTH: Managers have discretion to adjust performance zones in special cases based on consistent trends or unique contributions."
+        "question": "Understanding the root cause of performance challenges is optional in SAP’s Performance Improvement Process.",
+        "answer": "MYTH – Identifying the real issue is critical for effective solutions and employee support."
     },
 	{
         "label": "10",
