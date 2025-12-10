@@ -1,74 +1,101 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
-
-
-
-
 <head>
+  <meta charset="utf-8" />
+  <title>Spin Wheel</title>
 
-  <meta charset="UTF-8">
+  <!-- D3 v5 (required by script.js) -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
 
-  <title>CodePen - Spin Wheel Using JS</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    /* Basic layout and styling */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f6f6f6;
+      color: #222;
+      display: flex;
+      justify-content: center;
+    }
 
-  <link rel="stylesheet" href="./style.css">
+    .wrapper {
+      max-width: 760px;
+      width: 100%;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      padding: 20px;
+    }
 
+    #chart {
+      width: 100%;
+      height: 560px; /* matches the wheel script dimensions */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
 
+    .controls {
+      margin-top: 12px;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
 
+    .show-answer-button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .show-answer-button:active { transform: translateY(1px); }
 
+    #question, #answer {
+      margin-top: 16px;
+      padding: 12px;
+      border-radius: 6px;
+      background: #fafafa;
+      border: 1px solid #eee;
+    }
+
+    #question h2, #answer h2 {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.3;
+    }
+
+    /* Small responsive tweaks */
+    @media (max-width: 640px) {
+      #chart { height: 420px; }
+    }
+  </style>
 </head>
-
-
-
-
 <body>
+  <div class="wrapper">
+    <h1 style="font-size:18px;margin:0 0 12px 0;">Spin Wheel — Test Page</h1>
 
-  <!-- partial:index.partial.html -->
-    
- <h1 class="hederImg"> <img src="header.png" alt="A black, brown, and white dog wearing a kerchief" width="550" height="90" align="left" >
-  
- </h1> 
+    <!-- Chart container required by script.js -->
+    <div id="chart" aria-label="Spin wheel"></div>
 
-
-  <div id="chart"></div>
-
-  <div id="question">
-
-    <h2 class="hQuestion">
-
-    </h2>
-
-    <div class="arrow">
-    <div class="outer"></div>
-    <div class="inner"></div>
-  </div>
-  </div>
-  <div>
-
-    <div id="answer">
-
-      <h2 class="answerh2"></h2>
-
+    <div class="controls">
+      <!-- Button required by script.js -->
+      <button class="show-answer-button">Show Answer</button>
+      <div style="font-size:13px;color:#666;">Click the wheel (SPIN) to spin. Use the button to toggle showing the answer.</div>
     </div>
- 
-    <button class="show-answer-button" onclick="showAnswer()">Show Answer</button>
-	
 
+    <!-- Question and answer elements required by script.js -->
+    <div id="question" aria-live="polite"><h2>Question will appear here after spinning</h2></div>
+    <div id="answer" style="visibility:hidden;" aria-live="polite"><h2>Answer will appear here after clicking "Show Answer"</h2></div>
+
+    <!-- Include your script.js (the file you and I edited) -->
+    <!-- Ensure this script is located next to this index.html or adjust the path accordingly -->
+    <script src="script.js"></script>
   </div>
-
-  <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-
-  <!-- partial -->
-  
-
-  <script src="./script.js"></script>
-
-
-
-
 </body>
-
-
-
-
 </html>
