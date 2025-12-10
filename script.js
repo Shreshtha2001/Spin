@@ -7,6 +7,17 @@ console.log(checkHeaderEmpty && checkHeaderEmpty.childNodes)
 // {
 //     h1.style.display('none')
 // }
+
+// Minor UI tweaks: set page background color and chart card tint via JS so you get an updated look
+document.body.style.background = 'linear-gradient(180deg, #061226 0%, #042d2f 100%)';
+const chartEl = document.querySelector('#chart');
+if (chartEl) {
+    chartEl.style.background = 'linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01))';
+    chartEl.style.borderRadius = '10px';
+    chartEl.style.padding = '12px';
+    chartEl.style.boxShadow = '0 8px 20px rgba(0,0,0,0.5)';
+}
+
 var padding = { top: 8, right: 40, bottom: 0, left: 90 },
     w = 560 - padding.left - padding.right,
     h = 560 - padding.top - padding.bottom,
@@ -15,7 +26,19 @@ var padding = { top: 8, right: 40, bottom: 0, left: 90 },
     oldrotation = 0,
     picked = 100000,
     oldpick = [],
-    color = d3.scale.category20b();
+    // replaced default category20b with a softer, modern palette (10 colors)
+    color = d3.scale.ordinal().range([
+        "#FF6B6B", // warm red
+        "#FFB86B", // warm orange
+        "#FFD93D", // yellow
+        "#8BE78B", // green
+        "#6BD1FF", // light blue
+        "#6B9BFF", // blue
+        "#C06BFF", // purple
+        "#FF6BB3", // pink
+        "#FFD1A9", // peach
+        "#A9FFD1"  // mint
+    ]);
  
 var answerShow = false;
 var data = [
