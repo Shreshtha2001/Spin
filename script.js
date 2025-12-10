@@ -1,200 +1,236 @@
-// Requires D3 v5+ to be included in the page, e.g.:
-// <script src="https://d3js.org/d3.v5.min.js"></script>
-
+let checkHeaderEmpty = false;
+let h1 = document.querySelector('.hQuestion');
+let answerh = document.querySelector('.answerh2')
+console.log(checkHeaderEmpty.childNodes)
+// if(checkHeaderEmpty)
+// {
+//     h1.style.display('none')
+// }
 var padding = { top: 8, right: 40, bottom: 0, left: 90 },
     w = 560 - padding.left - padding.right,
     h = 560 - padding.top - padding.bottom,
     r = Math.min(w, h) / 2,
     rotation = 0,
     oldrotation = 0,
-    pickedIndex = 0;
-
-// Custom sequence you requested: questions 1, 3, 5, 4, 2, 9, 8, 6, 7, 10
-// Stored as zero-based indices
-var sequence = [0, 2, 4, 3, 1, 8, 7, 5, 6, 9];
-
-var color = d3.scaleOrdinal(d3.schemeCategory10);
-
+    picked = 100000,
+    oldpick = [],
+    color = d3.scale.category20b();
+ 
+var answerShow = false;
 var data = [
-    { idx: 0, label: "1", value: 1, question: "Question 1 (placeholder)", answer: "Answer 1 (placeholder)" },
-    { idx: 1, label: "2", value: 1, question: "Question 2 (placeholder)", answer: "Answer 2 (placeholder)" },
-    { idx: 2, label: "3", value: 1, question: "Question 3 (placeholder)", answer: "Answer 3 (placeholder)" },
-    { idx: 3, label: "4", value: 1, question: "Question 4 (placeholder)", answer: "Answer 4 (placeholder)" },
-    { idx: 4, label: "5", value: 1, question: "Question 5 (placeholder)", answer: "Answer 5 (placeholder)" },
-    { idx: 5, label: "6", value: 1, question: "Question 6 (placeholder)", answer: "Answer 6 (placeholder)" },
-    { idx: 6, label: "7", value: 1, question: "Question 7 (placeholder)", answer: "Answer 7 (placeholder)" },
-    { idx: 7, label: "8", value: 1, question: "Question 8 (placeholder)", answer: "Answer 8 (placeholder)" },
-    { idx: 8, label: "9", value: 1, question: "Question 9 (placeholder)", answer: "Answer 9 (placeholder)" },
-    { idx: 9, label: "10", value: 1, question: "Question 10 (placeholder)", answer: "Answer 10 (placeholder)" }
+    {
+        "label": "1",
+        "value": 1,
+        "question": "Once the Progress Check-In is complete, there is no need for further alignment until Q4.",
+        "answer": "MYTH: Continuous feedback and check-ins are expected year-round, not just during formal check-ins."
+    },
+    {
+        "label": "2",
+        "value": 2,
+        "question": "The Progress Check-In is primarily for underperformers and isn't relevant if everything is going smoothly. ",
+        "answer": "MYTH: It's for everyone, not just those facing challenges.It ensures ongoing alignment and recognizes progress across the board."
+    },
+    {
+        "label": "3",
+        "value": 3,
+        "question": "The Progress Check-In includes both a review of goal progress and observed behaviors.",
+        "answer": "FACT: It's meant to assess both WHAT and HOW."
+    },
+	{
+        "label": "4",
+        "value": 4,
+        "question": "If a goal becomes irrelevant during the year, it should be deleted and not considered in the final evaluation.",
+        "answer": "MYTH: If work was completed, the goal should still be evaluated with adjusted weighting, even if it's no longer valid for the current role."
+        },
+	{
+        "label": "5",
+        "value": 5,
+        "question": "Employees placed in the Improvement Zone during the Progress Check-In will automatically be placed there in the year-end evaluation as well.",
+        "answer": "MYTH: The Q3 zone is an interim snapshot. Employees can improve and move to a different zone by year-end based on their progress, development, and support received."	
+    },
+	{
+        "label": "6",
+        "value": 6,
+        "question": "Once a performance zone is assigned, there's no flexibility to adjust it.",
+        "answer": "MYTH: Managers have discretion to adjust performance zones in special cases based on consistent trends or unique contributions."
+    },
+	{
+        "label": "7",
+        "value": 7,
+        "question": "The performance zone is based only on final results from Q4.",
+        "answer": "MYTH: The performance zone reflects the entire year's performance. It considers input from all SAP Talks, goal progress, context, and feedback-not just Q4 outcomes."
+    },
+	{
+        "label": "8",
+        "value": 8,
+        "question": "Performance management is a shared responsibility between employees and managers.",
+        "answer": "FACT: Employees are expected to take ownership of their goals and development, while managers provide guidance and feedback throughout the year."
+    },
+    {
+        "label": "9",
+        "value": 9,
+        "question": "Once a performance zone is assigned, there's no flexibility to adjust it.",
+        "answer": "MYTH: Managers have discretion to adjust performance zones in special cases based on consistent trends or unique contributions."
+    },
+	{
+        "label": "10",
+        "value": 10,
+        "question": "No documented feedbacks are required to initiate PIP ?",
+        "answer": "MYTH: At least two documented feedbacks are necessary to initiate the PIP."
+    }
 ];
-
 var svg = d3.select('#chart')
     .append("svg")
+    .data([data])
     .attr("width", w + padding.left + padding.right)
     .attr("height", h + padding.top + padding.bottom);
-
-// compute center coords for things that should not rotate with the wheel
-var centerX = w / 2 + padding.left;
-var centerY = h / 2 + padding.top;
-
-// pointer/arrow group appended to svg (so it does NOT rotate with the wheel)
-var pointerGroup = svg.append("g")
-    .attr("class", "pointer")
-    .attr("transform", "translate(" + centerX + "," + centerY + ")");
-
-// draw a triangular pointer above the wheel
-// tip at y = -(r + 15), base around y = -(r - 5)
-var tipY = -(r + 15);
-var baseY = -(r - 5);
-var halfBase = 12;
-pointerGroup.append("path")
-    .attr("d", "M 0 " + tipY + " L " + (-halfBase) + " " + baseY + " L " + halfBase + " " + baseY + " Z")
-    .attr("fill", "#e53935")
-    .attr("stroke", "#b71c1c")
-    .attr("stroke-width", 1);
-
-// an optional small circle under the pointer for emphasis
-pointerGroup.append("circle")
-    .attr("cx", 0)
-    .attr("cy", baseY + 8)
-    .attr("r", 4)
-    .attr("fill", "#b71c1c");
-
 var container = svg.append("g")
     .attr("class", "chartholder")
-    .attr("transform", "translate(" + centerX + "," + centerY + ")");
-
-var vis = container.append("g");
-
-var answerDiv = document.querySelector("#answer");
-var showButton = document.querySelector(".show-answer-button");
-
-var pie = d3.pie().sort(null).value(function (d) { return 1; });
-var arc = d3.arc().outerRadius(r).innerRadius(0);
-
+    .attr("transform", "translate(" + (w / 2 + padding.left) + "," + (h / 2 + padding.top) + ")");
+var vis = container
+    .append("g");
+ 
+var answerDiv = document.querySelector("#answer")
+var showButton = document.querySelector(".show-answer-button")
+var pie = d3.layout.pie().sort(null).value(function (d) { return 1; });
+// declare an arc generator function
+var arc = d3.svg.arc().outerRadius(r);
+// select paths, use arc generator to draw
 var arcs = vis.selectAll("g.slice")
-    .data(pie(data))
+    .data(pie)
     .enter()
     .append("g")
-    .attr("class", "slice")
-    .attr("data-idx", function(d) { return d.data.idx; });
-
-// paths
+    .attr("class", "slice");
+ 
 arcs.append("path")
-    .attr("d", arc)
-    .attr("fill", function (d) { return color(d.data.idx); })
-    .attr("stroke", "#ffffff")
-    .attr("stroke-width", 1);
-
-// labels using arc.centroid for placement and rotation for readability
-arcs.append("text")
-    .attr("transform", function (d) {
-        var c = arc.centroid(d); // [x, y] at arc centroid
-        var angle = (d.startAngle + d.endAngle) / 2;
-        var degrees = angle * 180 / Math.PI;
-        // rotate text so it is radially aligned; flip it if it's upside down for readability
-        var rot = degrees - 90;
-        if (degrees > 90 && degrees < 270) rot += 180;
-        return "translate(" + c[0] + "," + c[1] + ") rotate(" + rot + ")";
-    })
-    .attr("text-anchor", "middle")
-    .style("font-size", "14px")
-    .style("fill", "#000")
-    .style("pointer-events", "none")
-    .text(function (d) {
-        return d.data.label;
+    .attr("fill", function (d, i) { return color(i); })
+    .attr("d", function (d) { return arc(d); });
+// add the text
+arcs.append("text").attr("transform", function (d) {
+    d.innerRadius = 0;
+    d.outerRadius = r;
+    d.angle = (d.startAngle + d.endAngle) / 2;
+    return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")translate(" + (d.outerRadius - 10) + ")";
+})
+    .attr("text-anchor", "end")
+    .text(function (d, i) {
+        return data[i].label;
     });
-
-// center button (kept inside container so it rotates only if we change that behavior)
+container.on("click", spin);
+function spin(d) {
+   setTimeout(()=>{
+    h1.style.display='flex'
+   },3000)
+    container.on("click", null);
+    //all slices have been seen, all done
+    console.log("OldPick: " + oldpick.length, "Data length: " + data.length);
+    if (oldpick.length == data.length) {
+        console.log("done");
+        container.on("click", null);
+        return;
+    }
+    var ps = 360 / data.length,
+        pieslice = Math.round(1440 / data.length),
+        rng = Math.floor((Math.random() * 1440) + 360);
+ 
+    rotation = (Math.round(rng / ps) * ps);
+ 
+    picked = Math.round(data.length - (rotation % 360) / ps);
+    picked = picked >= data.length ? (picked % data.length) : picked;
+    if (oldpick.indexOf(picked) !== -1) {
+        d3.select(this).call(spin);
+        return;
+    } else {
+        oldpick.push(picked);
+    }
+    rotation += 90 - Math.round(ps / 2);
+    vis.transition()
+        .duration(3000)
+        .attrTween("transform", rotTween)
+        .each("end", function () {
+            //mark question as seen
+            d3.select(".slice:nth-child(" + (picked + 1) + ") path")
+                .attr("fill", "#FFD700");
+            //populate question
+            d3.select("#question h2")
+                .text(data[picked].question);
+            d3.select("#answer h2")
+                .text(data[picked].answer)
+				.style("font-size", "19px")
+				.style("font-weight", "normal");
+            oldrotation = rotation;
+            answerDiv.style.visibility = "hidden"
+            /* Get the result value from object "data" */
+            console.log(data[picked].value)
+            /* Comment the below line for restrict spin to sngle time */
+            container.on("click", spin);
+        });
+}
+//make arrow
+// svg.append("g")
+//     .attr("transform", "translate(" + (w + padding.left + padding.right) + "," + ((h / 2) + padding.top) + ")")
+//     .append("path")
+//     .attr("d", "M-" + (r * .15) + ",0L0," + (r * .05) + "L0,-" + (r * .05) + "Z")
+//     .style({ "fill": "white" });
+//draw spin circle
 container.append("circle")
     .attr("cx", 0)
     .attr("cy", 0)
     .attr("r", 60)
-    .attr("fill", "white")
-    .style("cursor", "pointer");
-
+    .style({ "fill": "white", "cursor": "pointer" });
+//spin text
 container.append("text")
     .attr("x", 0)
     .attr("y", 15)
     .attr("text-anchor", "middle")
     .text("SPIN")
-    .style("font-weight", "bold")
-    .style("font-size", "30px")
-    .style("pointer-events", "none"); // so clicks go to container
-
-container.on("click", spin);
-
-function rotTween() {
-    var i = d3.interpolateNumber(oldrotation % 360, rotation);
+    .style({ "font-weight": "bold", "font-size": "30px" });
+ 
+function rotTween(to) {
+    var i = d3.interpolate(oldrotation % 360, rotation);
     return function (t) {
         return "rotate(" + i(t) + ")";
     };
 }
-
-function spin() {
-    // temporarily disable clicking
-    container.on("click", null);
-
-    // Choose the next pick from the custom sequence
-    var seqPos = pickedIndex % sequence.length;
-    var picked = sequence[seqPos];
-    pickedIndex = (pickedIndex + 1) % sequence.length;
-
-    var ps = 360 / data.length;
-    // targetAngle: center of the picked slice in degrees
-    var targetAngle = picked * ps + ps / 2;
-    // Spin multiple full rotations then land so that the picked slice is at the top (0 degrees)
-    rotation += 360 * 5 + (360 - targetAngle);
-
-    // Animate rotation of the slice group
-    vis.transition()
-        .duration(3000)
-        .attrTween("transform", rotTween)
-        .on("end", function () {
-            // reset fills
-            vis.selectAll("path").attr("fill", function(d){ return color(d.data.idx); });
-
-            // highlight the picked slice by idx
-            vis.selectAll("g.slice").filter(function(d){
-                return d.data.idx === picked;
-            }).select("path").attr("fill", "#FFD700");
-
-            // update question & answer text safely (if elements exist)
-            var qEl = document.querySelector("#question h2");
-            var aEl = document.querySelector("#answer h2");
-            if (qEl) qEl.textContent = data[picked].question;
-            if (aEl) {
-                aEl.textContent = data[picked].answer;
-                aEl.style.fontSize = "19px";
-                aEl.style.fontWeight = "normal";
-            }
-
-            oldrotation = rotation;
-
-            // hide answer area after spin (user can toggle via button)
-            if (answerDiv) answerDiv.style.visibility = "hidden";
-
-            // re-enable spin
-            container.on("click", spin);
-        });
-}
-
-var answerShow = false;
-function showAnswer() {
-    answerShow = !answerShow;
-    if (!answerDiv || !showButton) return;
-    if (answerShow) {
-        answerDiv.style.visibility = "visible";
-        showButton.textContent = "Hide Answer";
-        showButton.style.background = "red";
+ 
+function getRandomNumbers() {
+    var array = new Uint16Array(1000);
+    var scale = d3.scale.linear().range([360, 1440]).domain([0, 100000]);
+    if (window.hasOwnProperty("crypto") && typeof window.crypto.getRandomValues === "function") {
+        window.crypto.getRandomValues(array);
+        console.log("works");
     } else {
-        answerDiv.style.visibility = "hidden";
-        showButton.textContent = "Show Answer";
-        showButton.style.background = "#4CAF50";
+        //no support for crypto, get crappy random numbers
+        for (var i = 0; i < 1000; i++) {
+            array[i] = Math.floor(Math.random() * 100000) + 1;
+        }
     }
+    return array;
 }
-
-// attach showAnswer to the button if present
-if (showButton) {
-    showButton.addEventListener("click", showAnswer);
+ 
+// if(showButton.textContent = "Hide Answer")
+// {
+//     answerDiv.style.visibility = "hidden"
+// }
+ 
+function showAnswer() {
+    answerShow = true
+    answerh.style.background = 'white'
+    if (answerShow) {
+        answerDiv.style.visibility = "visible"
+        showButton.textContent = "Hide Answer"
+        showButton.style.background = "red"
+		setInterval(
+		function(){ 
+			showButton.textContent = "Show Answer"
+			showButton.style.background = "#4CAF50"
+		},
+		3000
+		);
+    }
+   /* else {
+        showButton.textContent = "Show Answer"
+        showButton.style.background = "#4CAF50"
+    }*/
+ 
 }
