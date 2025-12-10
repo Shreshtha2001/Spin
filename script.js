@@ -1,7 +1,8 @@
 let checkHeaderEmpty = false;
 let h1 = document.querySelector('.hQuestion');
 let answerh = document.querySelector('.answerh2')
-console.log(checkHeaderEmpty.childNodes)
+// make the log safe (avoid attempting to read childNodes of a boolean)
+console.log(checkHeaderEmpty && checkHeaderEmpty.childNodes)
 // if(checkHeaderEmpty)
 // {
 //     h1.style.display('none')
@@ -117,33 +118,35 @@ arcs.append("text").attr("transform", function (d) {
         return data[i].label;
     });
 container.on("click", spin);
+
+// new: deterministic sequence index
+let currentIndex = 0;
+
 function spin(d) {
    setTimeout(()=>{
     h1.style.display='flex'
    },3000)
     container.on("click", null);
-    //all slices have been seen, all done
+    // note: removed randomness/unique-check logic so sequence is fixed and cycles
     console.log("OldPick: " + oldpick.length, "Data length: " + data.length);
-    if (oldpick.length == data.length) {
-        console.log("done");
-        container.on("click", null);
-        return;
-    }
-    var ps = 360 / data.length,
-        pieslice = Math.round(1440 / data.length),
-        rng = Math.floor((Math.random() * 1440) + 360);
- 
-    rotation = (Math.round(rng / ps) * ps);
- 
-    picked = Math.round(data.length - (rotation % 360) / ps);
-    picked = picked >= data.length ? (picked % data.length) : picked;
-    if (oldpick.indexOf(picked) !== -1) {
-        d3.select(this).call(spin);
-        return;
-    } else {
-        oldpick.push(picked);
-    }
+
+    var ps = 360 / data.length;
+    // choose how many full rotations the wheel should make for the spin animation
+    var turns = 5;
+
+    // compute rotation so that the slice at currentIndex becomes selected
+    // the math matches the original approach (uses multiples of slice angle)
+    rotation = (turns * 360) + (data.length - currentIndex) * ps;
+
+    // set the picked slice to the deterministic index
+    picked = currentIndex;
+
+    // advance index for next spin (fixed sequence)
+    currentIndex = (currentIndex + 1) % data.length;
+
+    // apply the same alignment offset as original code
     rotation += 90 - Math.round(ps / 2);
+
     vis.transition()
         .duration(3000)
         .attrTween("transform", rotTween)
