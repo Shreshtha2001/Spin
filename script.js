@@ -119,8 +119,11 @@ arcs.append("text").attr("transform", function (d) {
     });
 container.on("click", spin);
 
-// new: deterministic sequence index
-let currentIndex = 0;
+// new: deterministic sequence mapping to requested labels order
+// Requested label order: 1, 3, 5, 4, 2, 9, 8, 6, 7, 10
+// data indices for labels 1..10 are 0..9, so map to indices accordingly:
+const sequenceIndices = [0, 2, 4, 3, 1, 8, 7, 5, 6, 9];
+let seqPos = 0;
 
 function spin(d) {
    setTimeout(()=>{
@@ -134,15 +137,14 @@ function spin(d) {
     // choose how many full rotations the wheel should make for the spin animation
     var turns = 5;
 
-    // compute rotation so that the slice at currentIndex becomes selected
-    // the math matches the original approach (uses multiples of slice angle)
-    rotation = (turns * 360) + (data.length - currentIndex) * ps;
+    // pick the next index from the predefined sequence
+    picked = sequenceIndices[seqPos];
 
-    // set the picked slice to the deterministic index
-    picked = currentIndex;
+    // advance sequence pointer for next spin (cycles)
+    seqPos = (seqPos + 1) % sequenceIndices.length;
 
-    // advance index for next spin (fixed sequence)
-    currentIndex = (currentIndex + 1) % data.length;
+    // compute rotation so that the slice at 'picked' becomes selected
+    rotation = (turns * 360) + (data.length - picked) * ps;
 
     // apply the same alignment offset as original code
     rotation += 90 - Math.round(ps / 2);
